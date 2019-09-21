@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+      <!--CUSTOM CSS-->
+	<link rel="stylesheet"  href="css/style.css">
+	  <!--BOOTSTRAP CSS-->
+	<link rel="stylesheet"  href="lib/dis/css/bootsrap.css">
+	 <!--Icon-->
+	<link rel="icon" href="img/iny.png">
+	<title>Intelaf</title>
+</head>
+<body>
+
+   <section id="contact">
+    <div class="container">
+      <div class="row">
+       <h2 class="text-center">Formulario</h2>
+        <p class="text-center">Enviame un mensaje</p>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <form>
+            <div class="form-group">
+              <label for="full_name">Nombre</label>
+              <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">direccion de Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+
+           
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea class="form-control" rows="10" id="message" name="message" placeholder="Mensaje" required></textarea>
+            </div>
+            <p><em></em></p>
+             <button type="submit" class="btn btn-primary btn-send"><span class="glyphicon glyphicon-send"> enviar</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15448.850362066012!2d-90.60075853022458!3d14.529828999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sgt!4v1563038111045!5m2!1ses-419!2sgt" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==========================
+    CONTACT - END
+  =========================== -->
+
+  <!-- ==========================
+    FOOTER - START
+  =========================== -->
+  
+<script>
+function myMap() {
+  var myLatLng = {lat: 44.7866, lng: 20.4489};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+    
+
+		
+</body>
+</html>
